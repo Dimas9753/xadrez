@@ -8,9 +8,9 @@ namespace tabuleiro
         public Tabuleiro tabuleiro { get; protected set; }
 
 
-    public Peca(Posicao _posicao, Cor _cor, Tabuleiro _tabuleiro)
+    public Peca(Cor _cor, Tabuleiro _tabuleiro)
     {
-        posicao = _posicao;
+        posicao = null;
         cor = _cor;
         tabuleiro = _tabuleiro;
         qtdmovimentos = 0;
