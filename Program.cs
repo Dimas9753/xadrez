@@ -10,18 +10,17 @@ namespace Xadrez_Console
         {
             PosicaoXadrex pos = new PosicaoXadrex('a' , 1);
             
-            System.Console.WriteLine(pos);
-            System.Console.WriteLine(pos.toPosicao());
-            
-            
-            /*
             try
             {
             Tabuleiro tab = new Tabuleiro(8,8);
            
             tab.ColocarPeca(new Torre(Cor.Vermelho, tab), new Posicao(0,0));
-            tab.ColocarPeca(new Rei(Cor.Vermelho, tab), new Posicao(7,7));
-            tab.ColocarPeca(new Torre(Cor.Vermelho, tab), new Posicao(0,0));
+            tab.ColocarPeca(new Rei(Cor.Vermelho, tab), new Posicao(2,5));
+            tab.ColocarPeca(new Torre(Cor.Vermelho, tab), new Posicao(3,2));
+
+            tab.ColocarPeca(new Torre(Cor.Amarelo, tab), new Posicao(6,5));
+            tab.ColocarPeca(new Rei(Cor.Amarelo, tab), new Posicao(6,6));
+            tab.ColocarPeca(new Torre(Cor.Amarelo, tab), new Posicao(4,1));
 
             Tela.ImprimirTabuleiro(tab);
             }catch(TabuleiroException e)
@@ -30,7 +29,7 @@ namespace Xadrez_Console
             }
 
             Console.ReadLine();
-            */
+            
         }
     }
 }

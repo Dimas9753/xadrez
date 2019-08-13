@@ -2,7 +2,7 @@ namespace tabuleiro
 {
     public enum Cor
     {
-       Branca,
+       Amarelo,
        Vermelho
     }
 }
