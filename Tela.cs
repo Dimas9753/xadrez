@@ -1,5 +1,6 @@
 using System;
 using tabuleiro;
+using xadrez;
 
 namespace Xadrez_Console
 {
@@ -25,8 +26,16 @@ namespace Xadrez_Console
              }
              System.Console.WriteLine();
         }
-         System.Console.Write("  A B C D E F H G");
+         System.Console.Write("  A B C D E F G H");
       }  
+
+      public static PosicaoXadrez LerPosicaoXadrez()
+      {
+         string s = Console.ReadLine();
+         char coluna = s[0];
+         int linha = int.Parse(s[1] + "");
+         return new PosicaoXadrez(coluna,linha);
+      }
 
       public static void ImprimirPeca(Peca _peca)
       {
@@ -45,6 +54,8 @@ namespace Xadrez_Console
             Console.ForegroundColor = aux2;
           }
       }
+
+
     }
 
 }
