@@ -12,6 +12,12 @@ namespace tabuleiro
           coluna = _coluna;
         }
 
+        public void DefinirValores(int _linha, int _coluna)
+        {
+          linha = _linha;
+          coluna = _coluna;
+        }
+
         public override string ToString()
         {
             return  linha 
